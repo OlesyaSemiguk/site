@@ -1,0 +1,294 @@
+@mixin circle {
+  content: ' ';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  top: 3px;
+  left: -20px;
+}
+
+.about-company {
+  background: url('/src/images/block_about/BG1.png');
+  background-repeat: no-repeat;
+  background-position: top -43px right;
+  font-family: 'Epilogue';
+  position: relative;
+  &__title {
+    display: block;
+    box-sizing: content-box;
+    padding-top: 104px;
+    margin-left: 577px;
+    width: 817px;
+    color: white;
+    font-size: 120px;
+    font-weight: 900;
+    line-height: 90%;
+    text-transform: uppercase;
+  }
+  &__text-and-contact {
+    margin-top: 266px;
+    .text {
+      margin-left: 100px;
+      color: $dark-gray;
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 90%;
+    }
+    .button-contact {
+      margin-top: 20px;
+      margin-left: 108px;
+      display: block;
+      width: 140px;
+      height: 52px;
+      text-align: center;
+      padding: 18px 32px;
+      border-radius: 4px;
+      background: $blue;
+      a {
+        height: 16px;
+        width: 16px;
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 90%;
+        cursor: pointer;
+      }
+    }
+  }
+  .img-laptop {
+    position: absolute;
+    top: 116px;
+    left: 325px;
+  }
+  &__content {
+    position: relative;
+    margin-top: 237px;
+    height: 525px;
+    &__title {
+      margin-left: 113px;
+      color: #9b999a;
+      text-align: center;
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 90%;
+    }
+    .pie-chart {
+      position: absolute;
+      top: 85px;
+      left: 506px;
+    }
+    .picture-in-diagram {
+      position: absolute;
+      top: 210px;
+      left: 544px;
+      width: auto;
+      height: 200px;
+    }
+    .diagram-text {
+      color: $dark-gray;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 90%;
+      li {
+        position: absolute;
+      }
+      .content-production {
+        top: 100px;
+        left: 322px;
+        &::before {
+          @include circle;
+          background-color: #fb729b;
+        }
+        &::after {
+          content: url(/src/images/block_about/Vector_1.svg);
+          position: absolute;
+          top: 25px;
+          left: -25px;
+        }
+      }
+      .business-analysis {
+        top: 100px;
+        left: 891px;
+        &::before {
+          @include circle;
+          background-color: #fcb56a;
+        }
+        &::after {
+          content: url(/src/images/block_about/Vector_2.svg);
+          position: absolute;
+          top: 25px;
+          left: -40px;
+        }
+      }
+      .software-development {
+        top: 283px;
+        left: 251px;
+        &::before {
+          @include circle;
+          background-color: #db74ff;
+        }
+        &::after {
+          content: url(/src/images/block_about/Vector_3.svg);
+          position: absolute;
+          top: 14px;
+          left: 35px;
+        }
+      }
+      .product-exploring {
+        top: 283px;
+        left: 950px;
+        &::before {
+          @include circle;
+          background-color: #fc846a;
+        }
+        &::after {
+          content: url(/src/images/block_about/Vector_4.svg);
+          position: absolute;
+          top: 14px;
+          left: -17px;
+        }
+      }
+      .ux-ui-research {
+        top: 458px;
+        left: 391px;
+        &::before {
+          @include circle;
+          background-color: #9074ff;
+        }
+        &::after {
+          content: url(/src/images/block_about/Vector_5.svg);
+          position: absolute;
+          top: 13px;
+          left: -85px;
+        }
+      }
+      .corporate-idenity {
+        top: 458px;
+        left: 891px;
+        &::before {
+          @include circle;
+          background-color: #74adff;
+        }
+        &::after {
+          content: url(/src/images/block_about/Vector_6.svg);
+          position: absolute;
+          top: 13px;
+          left: -50px;
+        }
+      }
+    }
+  }
+  @media (max-width: 1440px) {
+    background: url('/src/images/block_about/BG_mobile.png');
+    background-repeat: no-repeat;
+    background-position: top -43px right;
+    z-index: -2;
+    &__title {
+      padding-top: 34px;
+      margin-left: 153px;
+      width: 295px;
+      font-size: 35px;
+    }
+    &__text-and-contact {
+      margin-top: 117px;
+      .text {
+        margin-left: 16px;
+        font-size: 32px;
+        line-height: 110%;
+      }
+      .button-contact {
+        margin-top: 26px;
+        margin-left: 16px;
+      }
+    }
+    .img-laptop {
+      position: absolute;
+      top: 63px;
+      left: 175px;
+      height: 232px;
+      z-index: -1;
+    }
+    &__content {
+      margin-top: 57px;
+      height: 632px;
+      &__title {
+        color: #646161;
+        display: block;
+        width: 382px;
+        text-align: center;
+        margin-left: 16px;
+        font-size: 28px;
+        line-height: 110%;
+      }
+      .pie-chart {
+        position: absolute;
+        top: 100px;
+        left: 50px;
+        width: 325px;
+      }
+      .picture-in-diagram {
+        position: absolute;
+        top: 190px;
+        left: 75px;
+        height: 150px;
+      }
+      .diagram-text {
+        line-height: 110%;
+        li {
+          width: 363px;
+        }
+        .content-production {
+          top: 610px;
+          left: 36px;
+
+          &::after {
+            content: '';
+          }
+        }
+        .business-analysis {
+          top: 436px;
+          left: 36px;
+
+          &::after {
+            content: '';
+          }
+        }
+        .software-development {
+          top: 576px;
+          left: 36px;
+
+          &::after {
+            content: '';
+          }
+        }
+        .product-exploring {
+          top: 474px;
+          left: 36px;
+
+          &::after {
+            content: '';
+          }
+        }
+        .ux-ui-research {
+          top: 542px;
+          left: 36px;
+
+          &::after {
+            content: '';
+          }
+        }
+        .corporate-idenity {
+          top: 508px;
+          left: 36px;
+          width: 369px;
+
+          &::after {
+            content: '';
+          }
+        }
+      }
+    }
+  }
+}

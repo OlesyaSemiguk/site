@@ -1,0 +1,95 @@
+header {
+  display: flex;
+  font-family: 'Epilogue';
+  height: 43px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
+  position: relative;
+  #side-menu {
+    display: none;
+  }
+  .hamb {
+    display: none;
+  }
+  img {
+    height: 25px;
+    margin-left: 100px;
+  }
+  nav {
+    display: flex;
+
+    .menu {
+      display: flex;
+      gap: 31px;
+      list-style-type: none;
+      a {
+        display: block;
+        font-size: 18px;
+        color: #272f33;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 90%;
+        cursor: pointer;
+      }
+    }
+  }
+  .button-contact {
+    display: flex;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: $blue;
+
+    margin-right: 100px;
+    a {
+      color: white;
+      text-wrap: nowrap;
+      height: 11px;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 90%;
+      cursor: pointer;
+    }
+  }
+  @media (max-width: 1440px) {
+    img {
+      margin-left: 16px;
+    }
+    .hamb {
+      display: block;
+      &::before {
+        cursor: pointer;
+        content: url('/src/images/block_header/mingcute_menu.svg');
+      }
+    }
+    nav {
+      position: absolute;
+      max-height: 0;
+      overflow: hidden;
+      top: 43px;
+      right: 0px;
+      background-color: white;
+      z-index: 1;
+      padding: 0 10px;
+      transition: max-height 0.5s ease-out;
+      .menu {
+        flex-direction: column;
+        gap: 10px;
+        a {
+          height: auto;
+          font-size: 20px;
+          line-height: 100%;
+          cursor: pointer;
+        }
+      }
+    }
+    #side-menu:checked ~ nav {
+      max-height: 200px;
+    }
+    .button-contact {
+      margin-right: 16px;
+    }
+  }
+}

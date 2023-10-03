@@ -1,0 +1,107 @@
+.the-team {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  column-gap: 20px;
+  font-family: 'Epilogue';
+  img {
+    margin-top: 50px;
+  }
+  &__content {
+    &__title {
+      margin-top: 50px;
+      color: $dark-gray;
+      font-size: 72px;
+      font-weight: 600;
+      line-height: 90%;
+      text-transform: uppercase;
+    }
+    &__text {
+      margin-top: 40px;
+      &_title {
+        color: $black;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 90%;
+      }
+      &_content {
+        margin-top: 16px;
+        color: $dark-gray;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 120%;
+      }
+    }
+
+    &__columns {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+      &_2 .the-team__content__columns__number {
+        color: #5b9dfd;
+      }
+      &__number {
+        color: #9191f5;
+        font-size: 52px;
+        font-weight: 600;
+        line-height: 100%;
+      }
+      &__title {
+        color: $black;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 90%;
+      }
+      &__text {
+        margin-top: 16px;
+        width: 144px;
+        color: $dark-gray;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 120%;
+      }
+    }
+  }
+  @media (max-width: 1440px) {
+    margin-top: 80px;
+    margin-left: 16px;
+    margin-right: 16px;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 0;
+    img {
+      margin-top: 0;
+      height: 256px;
+      width: 305px;
+      margin-left: 38px;
+    }
+    &__content {
+      &__title {
+        margin-top: 0px;
+        font-size: 36px;
+        font-weight: 600;
+      }
+      &__text {
+        margin-top: 20px;
+        &_title {
+          font-size: 18px;
+        }
+        &_content {
+          margin-top: 8px;
+        }
+      }
+      &__columns {
+        margin-top: 20px;
+
+        &__text {
+          margin-top: 8px;
+          width: 122px;
+          color: $dark-gray;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

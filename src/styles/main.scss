@@ -1,0 +1,24 @@
+@import './fonts.scss';
+@import './vars.scss';
+@import './reset.scss';
+@import './desktop.scss';
+@import './block/header.scss';
+@import './block/about.scss';
+@import './block/team.scss';
+@import './block/agile.scss';
+@import './block/design.scss';
+@import './block/portfolio.scss';
+@import './block/technologies.scss';
+@import './block/contact.scss';
+@import './block/footer.scss';
+
+body {
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  @media (max-width: 1440px) {
+    width: 414px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

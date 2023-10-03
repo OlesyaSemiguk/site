@@ -1,0 +1,117 @@
+.technologies {
+  font-family: 'Epilogue';
+  background-color: #fbfbfb;
+  &__title {
+    padding-top: 40px;
+    margin-left: 100px;
+    color: $dark-gray;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 90%;
+    text-transform: uppercase;
+  }
+  &__list {
+    display: flex;
+    column-gap: 20px;
+    row-gap: 12px;
+    margin-top: 32px;
+    margin-left: 100px;
+    margin-right: 100px;
+    flex-wrap: wrap;
+    li {
+      height: 120px;
+      width: 190px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      background: #fff;
+    }
+  }
+  &__text {
+    display: flex;
+    gap: 20px;
+    margin-top: 30.37px;
+    &__item {
+      color: #a6a5a5;
+      font-family: 'Epilogue';
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 90%;
+    }
+  }
+  @media (max-width: 1440px) {
+    margin-top: 80px;
+    &__title {
+      padding-top: 16px;
+      margin-left: 16px;
+      font-size: 36px;
+      font-weight: 600;
+    }
+    &__list {
+      $root: &;
+      display: flex;
+      column-gap: 20px;
+      row-gap: 20px;
+      margin-top: 20px;
+      margin-left: 16px;
+      margin-right: 16px;
+      flex-wrap: wrap;
+      li {
+        height: 72px;
+        width: 114px;
+      }
+      #{$root}__item_1 img {
+        width: 49.8px;
+        height: 49.8px;
+      }
+      #{$root}__item_2 img {
+        width: 33.228px;
+        height: 49.8px;
+      }
+      #{$root}__item_3 img {
+        width: 51px;
+        height: 30.77px;
+      }
+      #{$root}__item_4 img {
+        width: 51px;
+        height: 51px;
+      }
+      #{$root}__item_5 img {
+        width: 60px;
+        height: 60px;
+      }
+      #{$root}__item_6 img {
+        width: 111.6px;
+        height: 27.6px;
+      }
+      #{$root}__item_7 img {
+        width: 52.759px;
+        height: 51px;
+      }
+      #{$root}__item_8 img {
+        width: 90.604px;
+        height: 51px;
+      }
+      #{$root}__item_9 img {
+        width: 90px;
+        height: 45px;
+      }
+      #{$root}__item_10 img {
+        width: 90px;
+        height: 25.796px;
+      }
+      #{$root}__item_11 img {
+        width: 90px;
+        height: 67.5px;
+      }
+      #{$root}__item_12 img {
+        width: 85.8px;
+        height: 44.4px;
+      }
+    }
+    &__text {
+      display: none;
+    }
+  }
+}
