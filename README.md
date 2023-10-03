@@ -12,5 +12,5 @@
    ```
 3. Создать каталог dist с продакшн сборкой
    ```shell
-   npm run dev
+   npm run build
    ```
