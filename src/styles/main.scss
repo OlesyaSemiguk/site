@@ -13,12 +13,20 @@
 @import './block/footer.scss';
 
 body {
-  width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  @media (max-width: 1440px) {
-    width: 414px;
+  width: 100%;
+  overflow-x: hidden;
+  .container {
+    width: 1440px;
     margin-left: auto;
     margin-right: auto;
+  }
+  @media (max-width: 1440px) {
+    width: 100%;
+    overflow-x: hidden;
+    .container {
+      width: 414px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }

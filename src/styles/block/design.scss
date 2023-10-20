@@ -34,29 +34,29 @@
     height: 484px;
     margin-bottom: 50px;
     &__background {
-      top: 27.87px;
+      top: 28px;
       position: absolute;
     }
     &__computer {
       position: absolute;
       height: 449px;
       left: 64px;
-      top: 13.87px;
+      top: 14px;
     }
     &__awards-logo {
       position: absolute;
       left: 721px;
-      top: 99.87px;
+      top: 100px;
     }
     &__css-logo {
       position: absolute;
       left: 866px;
-      top: 221.87px;
+      top: 222px;
     }
     &__fwa-logo {
       position: absolute;
       left: 576px;
-      top: 204.87px;
+      top: 205px;
     }
   }
   @media (max-width: 1440px) {
@@ -86,7 +86,7 @@
       height: 128px;
       margin-bottom: 16px;
       &__background {
-        top: 7.39px;
+        top: 7px;
         width: 382px;
       }
       &__computer {
@@ -95,22 +95,22 @@
         top: 6px;
       }
       &__awards-logo {
-        width: 82.854px;
-        height: 13.264px;
-        left: 191.27px;
-        top: 26.49px;
+        width: 83px;
+        height: 13px;
+        left: 191px;
+        top: 26px;
       }
       &__css-logo {
-        width: 125.742px;
-        height: 18.487px;
-        left: 229.73px;
-        top: 58.86px;
+        width: 126px;
+        height: 18px;
+        left: 230px;
+        top: 59px;
       }
       &__fwa-logo {
-        width: 76.4px;
-        height: 76.4px;
-        left: 152.8px;
-        top: 54.35px;
+        width: 76px;
+        height: 76px;
+        left: 153px;
+        top: 54px;
       }
     }
   }
