@@ -14,7 +14,7 @@ header {
   }
   img {
     height: 25px;
-    margin-left: 100px;
+    margin-left: 200px;
   }
   nav {
     display: flex;
@@ -41,19 +41,33 @@ header {
     align-items: center;
     border-radius: 4px;
     background: $blue;
-
-    margin-right: 100px;
+    margin-right: 200px;
     a {
       color: white;
       text-wrap: nowrap;
-      height: 11px;
       font-size: 12px;
       font-weight: 600;
-      line-height: 90%;
       cursor: pointer;
     }
   }
-  @media (max-width: 1440px) {
+  @media (max-width: 1919px) {
+    img {
+      margin-left: 100px;
+    }
+    .button-contact {
+      margin-right: 100px;
+    }
+  }
+  @media (max-width: 1439px) {
+    img {
+      margin-left: 20px;
+    }
+    .button-contact {
+      margin-right: 20px;
+    }
+  }
+
+  @media (max-width: 1279px) {
     img {
       margin-left: 16px;
     }

@@ -10,8 +10,7 @@
 
 .about-company {
   overflow: hidden;
-
-  background: url('/src/images/block_about/BG1.png');
+  background: url('/src/images/block_about/BG_1920.png');
   background-repeat: no-repeat;
   background-position: top -43px right;
   font-family: 'Epilogue';
@@ -60,7 +59,10 @@
     }
   }
   .img-laptop {
+    background-image: url('/src/images/block_about/laptop_1920.png');
     position: absolute;
+    width: 1116px;
+    height: 777px;
     top: 116px;
     left: 325px;
   }
@@ -206,6 +208,7 @@
       }
     }
     .img-laptop {
+      background-image: url('/src/images/block_about/laptop_640.png');
       position: absolute;
       top: 63px;
       left: 175px;
