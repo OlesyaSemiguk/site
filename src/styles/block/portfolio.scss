@@ -3,7 +3,6 @@
   font-family: 'Epilogue';
   &__text {
     margin-top: 32px;
-    margin-left: 100px;
     &__title {
       color: $dark-gray;
       font-size: 72px;
@@ -31,9 +30,10 @@
     $root: &;
     padding-bottom: 50px;
     &__item {
-      width: 1186px;
+      width: 1440px;
       height: 285px;
       border-radius: 8px;
+      margin-left: -200px;
       background: #bdd8ff;
       position: relative;
       &__image {
@@ -61,44 +61,124 @@
     }
     .item_1 {
       margin-top: 95px;
+
       #{$root}__item__image {
-        top: -220px;
+        background-image: url('/src/images/block_portfolio/1computer_1920.png');
+        background-repeat: no-repeat;
+        width: 898px;
+        height: 448px;
+        top: -98px;
+        left: 0px;
       }
       #{$root}__item__text {
-        left: 778px;
+        left: 1007px;
       }
     }
     .item_2 {
-      width: 1113px;
       margin-top: 176px;
-      margin-left: 324px;
+      margin-left: 280px;
       background-color: #e1eeff;
       #{$root}__item__image {
-        left: 322px;
-        top: -230px;
+        background-image: url('/src/images/block_portfolio/2computer_1920.png');
+        background-repeat: no-repeat;
+        width: 747px;
+        height: 454px;
+        left: 692px;
+        top: -105px;
       }
       #{$root}__item__text {
-        left: 57px;
+        left: 100px;
       }
     }
     .item_3 {
       margin-top: 191px;
       #{$root}__item__image {
-        top: -280px;
+        background-image: url('/src/images/block_portfolio/3computer_1920.png');
+        background-repeat: no-repeat;
+        width: 870px;
+        height: 458px;
+        top: -170px;
+        left: 0px;
       }
       #{$root}__item__text {
         width: 388px;
-        left: 751px;
+        left: 952px;
       }
     }
   }
-  @media (max-width: 1440px) {
+  @media (max-width: 1919px) {
+    &__example {
+      $root: &;
+      &__item {
+        border-radius: 0px;
+        margin-left: -100px;
+      }
+      .item_1 {
+      }
+      .item_2 {
+        margin-left: -100px;
+      }
+      .item_3 {
+        #{$root}__item__image {
+          left: -108px;
+        }
+      }
+    }
+  }
+  @media (max-width: 1439px) {
+    &__example {
+      $root: &;
+      &__item {
+        border-radius: 0px;
+        margin-left: -20px;
+      }
+      .item_1 {
+        #{$root}__item__image {
+          background-image: url('/src/images/block_portfolio/1computer_1280.png');
+          width: 718px;
+          height: 358px;
+          top: -53px;
+          left: 0px;
+        }
+
+        #{$root}__item__text {
+          left: 847px;
+        }
+      }
+      .item_2 {
+        margin-left: -20px;
+        #{$root}__item__image {
+          background-image: url('/src/images/block_portfolio/2computer_1280.png');
+          width: 718px;
+          height: 358px;
+          top: -60px;
+          left: 766px;
+        }
+
+        #{$root}__item__text {
+          left: 100px;
+        }
+      }
+      .item_3 {
+        #{$root}__item__image {
+          background-image: url('/src/images/block_portfolio/3computer_1280.png');
+          width: 718px;
+          height: 358px;
+          top: -80px;
+          left: 0px;
+        }
+
+        #{$root}__item__text {
+          left: 792px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1279px) {
     padding-top: 80px;
-    font-family: 'Epilogue';
     &__text {
       margin-top: 0px;
-      margin-left: 16px;
-      margin-right: 16px;
       &__title {
         font-size: 36px;
       }
@@ -109,6 +189,80 @@
       }
       &__content {
         margin-top: 8px;
+        width: 608px;
+      }
+    }
+    &__example {
+      $root: &;
+      padding-bottom: 0;
+      &__item {
+        margin-left: -16px;
+        width: 576px;
+        height: 114px;
+        border-radius: 3px;
+        &__text {
+          width: 155px;
+          &__title {
+            margin-top: 26px;
+            font-size: 19px;
+          }
+          &__content {
+            margin-top: 11px;
+            width: 133px;
+            font-size: 9px;
+          }
+        }
+      }
+      .item_1 {
+        margin-top: 80px;
+        #{$root}__item__image {
+          background-image: url('/src/images/block_portfolio/1computer_640.png');
+          width: 359px;
+          height: 179px;
+          top: -39px;
+          left: 0px;
+        }
+
+        #{$root}__item__text {
+          left: 403px;
+        }
+      }
+      .item_2 {
+        margin-top: 66px;
+        width: 576px;
+        margin-left: 48px;
+        #{$root}__item__image {
+          background-image: url('/src/images/block_portfolio/2computer_640.png');
+          width: 298px;
+          height: 181px;
+          top: -42px;
+          left: 276px;
+        }
+
+        #{$root}__item__text {
+          left: 40px;
+        }
+      }
+      .item_3 {
+        margin-top: 66px;
+        #{$root}__item__image {
+          background-image: url('/src/images/block_portfolio/3computer_640.png');
+          width: 348px;
+          height: 183px;
+          top: -69px;
+          left: 0px;
+        }
+
+        #{$root}__item__text {
+          left: 380px;
+          width: 155px;
+        }
+      }
+    }
+  }
+  @media (max-width: 639px) {
+    &__text {
+      &__content {
         width: 382px;
       }
     }
@@ -116,12 +270,12 @@
       $root: &;
       padding-bottom: 0;
       &__item {
-        margin-left: 16px;
+        margin-left: 0px;
         width: 382px;
-        height: 92px;
-        border-radius: 2px;
+        height: 91px;
+        border-radius: 3px;
         &__text {
-          width: 201px;
+          width: 158px;
           &__title {
             margin-top: 13px;
             font-size: 24px;
@@ -136,10 +290,14 @@
       .item_1 {
         margin-top: 20px;
         #{$root}__item__image {
+          background-image: url('/src/images/block_portfolio/1computer_414.png');
+          background-size: contain;
+          width: 339px;
           height: 226px;
-          top: -65px;
-          left: -15px;
+          top: -70px;
+          left: -16px;
         }
+
         #{$root}__item__text {
           left: 204px;
         }
@@ -147,12 +305,16 @@
       .item_2 {
         margin-top: 66px;
         width: 382px;
-        margin-left: 16px;
+        margin-left: 0px;
         #{$root}__item__image {
-          height: 161px;
-          left: 191px;
-          top: -60px;
+          background-image: url('/src/images/block_portfolio/2computer_414.png');
+          background-size: contain;
+          width: 241px;
+          height: 160px;
+          top: -42px;
+          left: 192px;
         }
+
         #{$root}__item__text {
           left: 20px;
         }
@@ -160,13 +322,17 @@
       .item_3 {
         margin-top: 66px;
         #{$root}__item__image {
-          height: 217px;
+          background-image: url('/src/images/block_portfolio/3computer_414.png');
+          background-size: contain;
+          width: 237px;
+          height: 211px;
           top: -90px;
-          left: -20px;
+          left: -16px;
         }
+
         #{$root}__item__text {
-          width: 201px;
           left: 174px;
+          width: 201px;
         }
       }
     }

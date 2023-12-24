@@ -3,7 +3,6 @@
   padding-top: 50px;
 
   &__text {
-    margin-left: 100px;
     padding-top: 50px;
     &__title {
       color: #646161;
@@ -33,39 +32,95 @@
     position: relative;
     height: 484px;
     margin-bottom: 50px;
-    &__background {
-      top: 28px;
-      position: absolute;
-    }
     &__computer {
-      position: absolute;
+      background-image: url('/src/images/block_design/computer_1920.png');
+      background-repeat: no-repeat;
+      width: 600px;
       height: 449px;
-      left: 64px;
-      top: 14px;
+      position: absolute;
+      left: 140px;
+      top: 0px;
+    }
+    &__background {
+      background-image: url('/src/images/block_design/BG_1920.png');
+      background-repeat: no-repeat;
+      width: 1920px;
+      height: 450px;
+      position: absolute;
+      left: -200px;
+      top: -101px;
     }
     &__awards-logo {
       position: absolute;
-      left: 721px;
-      top: 100px;
+      left: 761px;
+      top: 86px;
     }
     &__css-logo {
       position: absolute;
-      left: 866px;
-      top: 222px;
+      left: 906px;
+      top: 208px;
     }
     &__fwa-logo {
       position: absolute;
-      left: 576px;
-      top: 205px;
+      left: 654px;
+      top: 303px;
     }
   }
-  @media (max-width: 1440px) {
-    font-family: 'Epilogue';
-    padding-top: 80px;
+  @media (max-width: 1919px) {
+    &__image {
+      &__computer {
+        background-image: url('/src/images/block_design/computer_1920.png');
+        left: 0px;
+        top: 0px;
+      }
+      &__background {
+        background-image: url('/src/images/block_design/BG_1440.png');
+        background-repeat: no-repeat;
 
+        left: -100px;
+        top: -101px;
+      }
+      &__awards-logo {
+        left: 620px;
+      }
+      &__css-logo {
+        left: 766px;
+      }
+      &__fwa-logo {
+        left: 514px;
+      }
+    }
+  }
+  @media (max-width: 1439px) {
+    &__image {
+      &__computer {
+        background-image: url('/src/images/block_design/computer_1920.png');
+        left: 0px;
+        top: 0px;
+      }
+      &__background {
+        background-image: url('/src/images/block_design/BG_1280.png');
+        background-repeat: no-repeat;
+        left: -16px;
+        top: 13px;
+      }
+      &__awards-logo {
+        left: 625px;
+      }
+      &__css-logo {
+        left: 753px;
+        width: 421px;
+        height: 70px;
+      }
+      &__fwa-logo {
+        left: 530px;
+      }
+    }
+  }
+
+  @media (max-width: 1279px) {
+    padding-top: 80px;
     &__text {
-      margin-left: 16px;
-      margin-right: 16px;
       padding-top: 0;
       &__title {
         font-size: 36px;
@@ -77,7 +132,7 @@
       }
       &__content {
         margin-top: 8px;
-        width: 382px;
+        width: 608px;
       }
     }
     &__image {
@@ -85,14 +140,52 @@
       position: relative;
       height: 128px;
       margin-bottom: 16px;
-      &__background {
-        top: 7px;
-        width: 382px;
-      }
       &__computer {
-        height: 119px;
-        left: 17px;
-        top: 6px;
+        background-image: url('/src/images/block_design/computer_640.png');
+        left: 139px;
+        top: 0px;
+      }
+      &__background {
+        background-image: url('/src/images/block_design/BG_640.png');
+        background-repeat: no-repeat;
+        left: 0px;
+        top: 13px;
+      }
+      &__awards-logo {
+        width: 83px;
+        height: 13px;
+        left: 417px;
+        top: 26px;
+      }
+      &__css-logo {
+        width: 126px;
+        height: 18px;
+        left: 455px;
+        top: 59px;
+      }
+      &__fwa-logo {
+        width: 54px;
+        height: 18px;
+        left: 390px;
+        top: 83px;
+      }
+    }
+  }
+  @media (max-width: 639px) {
+    &__text__content {
+      width: 382px;
+    }
+    &__image {
+      &__computer {
+        background-image: url('/src/images/block_design/computer_640.png');
+        left: 26px;
+        top: 0px;
+      }
+      &__background {
+        background-image: url('/src/images/block_design/BG_414.png');
+        background-repeat: no-repeat;
+        left: 0px;
+        top: 13px;
       }
       &__awards-logo {
         width: 83px;
@@ -103,14 +196,14 @@
       &__css-logo {
         width: 126px;
         height: 18px;
-        left: 230px;
+        left: 229px;
         top: 59px;
       }
       &__fwa-logo {
-        width: 76px;
-        height: 76px;
-        left: 153px;
-        top: 54px;
+        width: 54px;
+        height: 18px;
+        left: 163px;
+        top: 75px;
       }
     }
   }

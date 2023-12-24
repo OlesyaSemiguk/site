@@ -12,14 +12,16 @@
   overflow: hidden;
   background: url('/src/images/block_about/BG_1920.png');
   background-repeat: no-repeat;
-  background-position: top -43px right;
+  background-position: top -43px left;
   font-family: 'Epilogue';
   position: relative;
+  margin-left: -200px;
+  margin-right: -200px;
+
   &__title {
     display: block;
-    box-sizing: content-box;
     padding-top: 104px;
-    margin-left: 577px;
+    margin-left: 908px;
     width: 817px;
     color: white;
     font-size: 120px;
@@ -29,8 +31,8 @@
   }
   &__text-and-contact {
     margin-top: 266px;
+    margin-left: 200px;
     .text {
-      margin-left: 100px;
       color: $dark-gray;
       font-size: 48px;
       font-weight: 400;
@@ -38,7 +40,6 @@
     }
     .button-contact {
       margin-top: 20px;
-      margin-left: 108px;
       display: block;
       width: 140px;
       height: 52px;
@@ -64,12 +65,13 @@
     width: 1116px;
     height: 777px;
     top: 116px;
-    left: 325px;
+    left: 604px;
   }
   &__content {
     position: relative;
     margin-top: 237px;
     height: 525px;
+    margin-left: 240px;
     &__title {
       margin-left: 113px;
       color: #9b999a;
@@ -184,44 +186,89 @@
       }
     }
   }
-  @media (max-width: 1440px) {
-    background: url('/src/images/block_about/BG_mobile.png');
+
+  @media (max-width: 1919px) {
+    background: url('/src/images/block_about/BG_1440.png');
     background-repeat: no-repeat;
-    background-position: top -43px right;
+    background-position: top -43px left;
+    margin-left: -100px;
+    margin-right: -100px;
     z-index: -2;
     &__title {
-      padding-top: 34px;
-      margin-left: 153px;
-      width: 295px;
-      font-size: 35px;
+      margin-left: 523px;
     }
     &__text-and-contact {
-      margin-top: 117px;
+      margin-left: 100px;
+    }
+    .img-laptop {
+      z-index: -1;
+      left: 274px;
+    }
+
+    &__content {
+      margin-left: 0px;
+    }
+  }
+
+  @media (max-width: 1439px) {
+    background: url('/src/images/block_about/BG_1280.png');
+    background-repeat: no-repeat;
+    z-index: -2;
+    margin-left: -20px;
+    margin-right: -20px;
+    &__title {
+      margin-left: 443px;
+    }
+    &__text-and-contact {
+      margin-left: 20px;
+    }
+    .img-laptop {
+      z-index: -1;
+      left: 164px;
+    }
+    &__content {
+      margin-left: -80px;
+    }
+  }
+
+  @media (max-width: 1279px) {
+    background: url('/src/images/block_about/BG_640.png');
+    background-repeat: no-repeat;
+    z-index: -2;
+    margin-left: -16px;
+    margin-right: -16px;
+    &__title {
+      margin-left: 212px;
+      padding-top: 31px;
+      font-size: 60px;
+    }
+    &__text-and-contact {
+      margin-top: 120px;
+      margin-left: 16px;
       .text {
-        margin-left: 16px;
         font-size: 32px;
         line-height: 110%;
       }
       .button-contact {
         margin-top: 26px;
-        margin-left: 16px;
       }
     }
     .img-laptop {
       background-image: url('/src/images/block_about/laptop_640.png');
+      background-repeat: no-repeat;
       position: absolute;
-      top: 63px;
-      left: 175px;
-      height: 232px;
+      top: 89px;
+      left: 291px;
       z-index: -1;
     }
     &__content {
       margin-top: 57px;
+      margin-left: 0px;
       height: 632px;
       &__title {
         color: #646161;
         display: block;
-        width: 382px;
+        width: 608px;
         text-align: center;
         margin-left: 16px;
         font-size: 28px;
@@ -230,13 +277,13 @@
       .pie-chart {
         position: absolute;
         top: 100px;
-        left: 50px;
+        left: 159px;
         width: 325px;
       }
       .picture-in-diagram {
         position: absolute;
         top: 190px;
-        left: 75px;
+        left: 184px;
         height: 150px;
       }
       .diagram-text {
@@ -293,6 +340,48 @@
             content: '';
           }
         }
+      }
+    }
+  }
+  @media (max-width: 639px) {
+    background: url('/src/images/block_about/BG_414.png');
+    background-repeat: no-repeat;
+    background-position: top -26px left;
+    &__title {
+      padding-top: 34px;
+      margin-left: 153px;
+      width: 295px;
+      font-size: 35px;
+    }
+    &__text-and-contact {
+      margin-top: 117px;
+      .text {
+        font-size: 32px;
+        line-height: 110%;
+      }
+      .button-contact {
+        margin-top: 26px;
+      }
+    }
+    .img-laptop {
+      background-image: url('/src/images/block_about/laptop_640.png');
+      position: absolute;
+      top: 63px;
+      left: 175px;
+      height: 232px;
+      z-index: 1;
+    }
+    &__content {
+      margin-top: 57px;
+      height: 632px;
+      &__title {
+        width: 382px;
+      }
+      .pie-chart {
+        left: 50px;
+      }
+      .picture-in-diagram {
+        left: 75px;
       }
     }
   }
